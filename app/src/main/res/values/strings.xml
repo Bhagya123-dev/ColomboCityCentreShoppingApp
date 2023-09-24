@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">ColomboCityCentreShoppingApp</string>
+
+    <!--    MENU-->
+    <string name="home">Home</string>
+    <string name="shops">Shops</string>
+    <string name="orders">Orders</string>
+    <string name="cart">Cart</string>
+    <string name="profile">Profile</string>
+
+    <!--    WELCOME SCREEN-->
+    <string name="welcome_to_the_shopping_mall">Welcome to The Shopping Mall</string>
+    <string name="order_a_wide_range_of">Order a wide range of sections from your favorite brand or shops</string>
+    <string name="get_started">Get Started</string>
+    <string name="skip">Skip</string>
+
+    <!--    ENTER MOBILE NUMBER-->
+    <string name="enter_your_mobile_number">Enter your mobile number</string>
+    <string name="by_proceeding_you_are">By proceeding, you are consenting to receive calls or SMS messages, including
+                       by automated dialer from Colombo City Centre Merchants and its affiliates to the number you provide.</string>
+    <string name="next">Next</string>
+    <string name="enter_your_mobile_no">Enter your mobile number</string>
+    <string name="enter_valid_mobile_no">Enter valid mobile number</string>
+    
+    <!--    VERIFY MOBILE-->
+    <string name="verify_mobile_number">Verify your mobile number</string>
+    <string name="enter_digits_otp">Enter 6 digits OTP verification code that was sent your registered mobile no</string>
+    <string name="didnt_get_otp">Didn\'t get OTP?</string>
+    <string name="resend">Re-send</string>
+    <string name="enter_your_otp">Enter your OTP</string>
+
+    <!--    HOME-->
+    <string name="deliver_now">Deliver Now</string>
+    <string name="fashion">Fashion</string>
+    <string name="electronics">Electronics</string>
+    <string name="home_garden">Home Garden</string>
+    <string name="beauty">Beauty</string>
+    <string name="toys">Toys</string>
+    <string name="jewelry">Jewelry</string>
+    <string name="health_care">Health Care</string>
+    <string name="food">Food</string>
+    <string name="what_are_you_looking_for">What are you looking for?</string>
+    <string name="todays_trending">Today\'s Trending</string>
+    <string name="see_all">See all</string>
+    <string name="mi_band_smart">Mi Band 5 Smart Bracelet Standard</string>
+    <string name="jovroom_wireless">Joyroom Wireless In-Ear Headset</string>
+    <string name="shop_by_top_merchant">Shop by Top Merchant</string>
+
+    <!--    SEARCH CATEGORY-->
+    <string name="recent_searches">Recent Searches</string>
+    <string name="top_search_categories">Top Search Categories</string>
+
+    <!--    SEARCH CATEGORY ITEM-->
+    <string name="searches">Searches</string>
+    <string name="body_spray">Body Spray</string>
+    <string name="results_for_body_spray">12 Results for Body Spray</string>
+    <string name="hikkaduwa_body_spray">Hikkaduwa - Body Spray 200ml</string>
+    <string name="blue_water_body_spray">Blue Water Lily - Body Spray 200ml</string>
+    <string name="mirissa_body_spray">Mirissa - Body Spray 200ml</string>
+    <string name="night_body_spray">Night Jasmine - Body Spray 200ml</string>
+    <string name="clear">Clear</string>
+
+    <!--    UPDATE DELIVERY ADDRESS-->
+    <string name="update_delivery_address">Update Delivery Location</string>
+    <string name="enter_a_new_address">Enter a new address</string>
+    <string name="current_location">Current Location</string>
+    <string name="recent_locations">Recent Locations</string>
+    <string name="edit">Edit</string>
+
+    <!--    CHANGE DELIVERY ADDRESS-->
+    <string name="change_delivery_address">Change Delivery Address</string>
+    <string name="tap_to_adjust_pin">Tap to Adjust Pin</string>
+    <string name="house_apt_no">House Apt No</string>
+    <string name="building_name">Building Name</string>
+    <string name="street_name">Street Name or Number</string>
+    <string name="district">District</string>
+    <string name="landmark">Landmark</string>
+    <string name="update_address">Update Address</string>
+    <string name="remove_address">Remove Address</string>
+    <string name="confirm_location">Confirm Location</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+
+</resources>

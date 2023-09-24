@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#E6000000"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cl_root">
+
+    <ImageView
+        android:id="@+id/iv_top_bar"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_5sdp"
+        android:src="@drawable/top_bar"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_15sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:background="@drawable/bg_white_curve_top_corners"
+    app:layout_constraintTop_toBottomOf="@id/iv_top_bar"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent">
+
+    <TextView
+        android:id="@+id/tv_enter_your_mobile_no"
+        style="@style/styleTextBlack"
+        android:text="@string/enter_your_mobile_number"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_mobile_no"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:padding="@dimen/_5sdp"
+        android:background="@drawable/bg_grey_rectangle"
+        app:layout_constraintTop_toBottomOf="@+id/tv_enter_your_mobile_no"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:id="@+id/tv_country_code"
+            android:layout_width="@dimen/_29sdp"
+            android:layout_height="@dimen/_20sdp"
+            style="@style/styleTextBlack"
+            android:text="+94"
+            android:layout_marginStart="@dimen/_15sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <EditText
+            android:id="@+id/et_mobile_no"
+            android:layout_height="@dimen/_20sdp"
+            style="@style/styleTextGrey"
+            android:hint="000  000  000"
+            android:background="@color/transparent"
+            android:letterSpacing="0.2"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:layout_marginBottom="@dimen/_5sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/tv_country_code"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_error_enter_mobile_no"
+        style="@style/styleTextRed"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/cl_mobile_no"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_by_proceeding"
+        style="@style/styleTextGrey"
+        android:textSize="@dimen/text_medium"
+        android:text="@string/by_proceeding_you_are"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:textAlignment="textStart"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_error_enter_mobile_no"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_next"
+        style="@style/styleButtonGreen"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_by_proceeding"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            style="@style/styleTextWhite"
+            android:text="@string/next"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <ImageView
+            android:id="@+id/iv_next"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:src="@drawable/next_arrow"
+            android:layout_marginEnd="@dimen/_18sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
