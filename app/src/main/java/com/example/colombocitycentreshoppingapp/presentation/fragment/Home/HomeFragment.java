@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -245,6 +246,15 @@ public class HomeFragment extends Fragment {
 
         ImageView ivBack = bottomSheetDialog.findViewById(R.id.iv_back);
         rvRecentLocation = bottomSheetDialog.findViewById(R.id.rv_recent_locations);
+
+        ConstraintLayout clSearch = bottomSheetDialog.findViewById(R.id.cl_search);
+        if( clSearch != null) {
+            TextView tvClear = clSearch.findViewById(R.id.tv_clear);
+            EditText etSearch = clSearch.findViewById(R.id.et_search);
+
+            tvClear.setVisibility(View.GONE);
+            etSearch.setHint(getString(R.string.enter_a_new_address));
+        }
 
         GridLayoutManager gridLayoutManager1= new GridLayoutManager(getActivity(), 1);
         rvRecentLocation.setLayoutManager(gridLayoutManager1);

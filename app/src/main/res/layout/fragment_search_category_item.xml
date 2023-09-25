@@ -36,49 +36,12 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"/>
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <include
             android:id="@+id/cl_search"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="@dimen/_8sdp"
-            android:layout_marginStart="@dimen/_10sdp"
-            android:layout_marginEnd="@dimen/_10sdp"
-            android:layout_marginTop="@dimen/_15sdp"
-            android:background="@drawable/bg_grey_curve_corners"
-            app:layout_constraintTop_toBottomOf="@id/tv_what_are_you_looking_for"
+            layout="@layout/layout_search_bar"
+            app:layout_constraintTop_toBottomOf="@+id/tv_what_are_you_looking_for"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent">
-
-            <ImageView
-                android:id="@+id/iv_search"
-                android:layout_width="@dimen/_15sdp"
-                android:layout_height="@dimen/_15sdp"
-                android:layout_marginStart="@dimen/_5sdp"
-                android:padding="@dimen/_2sdp"
-                android:src="@drawable/search"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"/>
-
-            <TextView
-                android:id="@+id/tv_search"
-                style="@style/styleTextBlack"
-                android:layout_width="0dp"
-                android:layout_marginStart="@dimen/_3sdp"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintLeft_toRightOf="@+id/iv_search"
-                app:layout_constraintRight_toLeftOf="@+id/tv_clear"/>
-
-            <TextView
-                android:id="@+id/tv_clear"
-                style="@style/styleTextGrey"
-                android:text="@string/clear"
-                android:layout_marginStart="@dimen/_25sdp"
-                android:layout_marginEnd="@dimen/_5sdp"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintRight_toRightOf="parent"/>
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
+            app:layout_constraintRight_toRightOf="parent"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

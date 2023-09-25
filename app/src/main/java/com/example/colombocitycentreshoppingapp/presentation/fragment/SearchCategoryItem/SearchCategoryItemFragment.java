@@ -2,6 +2,7 @@ package com.example.colombocitycentreshoppingapp.presentation.fragment.SearchCat
 
 import android.os.Bundle;
 
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 
@@ -42,21 +43,24 @@ public class SearchCategoryItemFragment extends DialogFragment {
         View rootView = inflater.inflate(R.layout.fragment_search_category_item, container, false);
 
         ImageView ivBackArrow = (ImageView)rootView.findViewById(R.id.iv_back);
-        TextView tvCategory = (TextView) rootView.findViewById(R.id.tv_search);
-        TextView tvClear = (TextView) rootView.findViewById(R.id.tv_clear);
+        EditText etCategory = (EditText) rootView.findViewById(R.id.et_search);
+
+        ConstraintLayout clSearch = (ConstraintLayout) rootView.findViewById(R.id.cl_search);
+        TextView tvClear = (TextView) clSearch.findViewById(R.id.tv_clear);
 
         Bundle bundle = getArguments();
         if(bundle != null){
             String itemName = bundle.getString("itemName");
 
-            tvCategory.setText(itemName);
+            etCategory.setText(itemName);
+            etCategory.setEnabled(false);
 
         }
 
         tvClear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                tvCategory.setText(null);
+                etCategory.setText(null);
             }
         });
 
